@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+
+<body>
+    <iframe id="iframe" src="./index.html" frameborder="0"></iframe>
+    <div class="btn-container">
+        <div class="btn inside">
+            <h5>Button:</h5>
+            <ul>
+                <li id="Camera_Front">Camera_Front</li>
+                <li id="Camera_Left">Camera_Left</li>
+                <li id="Camera_Top">Camera_Top</li>
+                <li id="AutoRotate">AutoRotate</li>
+            </ul>
+        </div>       
+    </div>
+</body>
+<style>
+    #iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 -5px 6px rgba(0,0,0,.1);*/
+    }
+
+    .btn {
+        position: relative;
+        width: 100%;
+        height: auto;
+        /* background-color: rgb(165, 178, 107); */
+        display: flex;
+        box-shadow: 0 -5px 6px rgba(0, 0, 0, .1);
+    }
+
+    .btn h5 {
+        display: flex;
+        width: 120px;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .btn ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+
+    .btn li {
+        display: inline;
+        cursor: pointer;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .inside li img,
+    .pointer li img,
+    .outside li img {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .model li img {
+        width: auto;
+        height: 60px;
+        padding: 10px 0;
+    }
+
+    .product li img {
+        width: auto;
+        height: 60px;
+    }
+</style>
+
+</html>

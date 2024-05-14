@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Assignment</title>
+    <link rel="shortcut icon" href="__CDN__/assets/img/favicon.ico" />
+    <link href="__CDN__/assets/css/index.css" rel="stylesheet">
+    <link href="__CDN__/assets/layui/css/layui.css" rel="stylesheet">
+    <script src="__CDN__/assets/layui/layui.js"></script>
+    <link rel="stylesheet" href="__CDN__/assets/css/idangerous.swiper.css">
+    <script src="__CDN__/assets/js/idangerous.swiper.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .blue-slide {
+        /* background: #4390EE;*/
+        background-image: url("/assets/img/b1.png");
+    }
+
+    .red-slide {
+       /* background: #CA4040;*/
+        background-image: url("/assets/img/b1.png");
+    }
+
+    .orange-slide {
+        /*background: #FF8604;*/
+        background-image: url("/assets/img/b1.png");
+    }
+
+    .swiper-slide {
+        height: 600px;
+        color: #fff;
+        font-size: 36px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+     
+</style>
+
+<body>
+
+    <div id="mainbody">
+        <div class="header-view">
+            <div class="logo-view">
+                Assignment
+            </div>
+
+            <div class="menu-view">
+                <div class="menu-list">
+                    <div class="menu-item ">
+                       <a href="/">Home</a> 
+                    </div>
+                   
+                    <div class="menu-item active">
+                        <a href="{:url('models')}">models</a> 
+                        
+                    </div>
+                    <div class="menu-item" onclick="openContact()">
+                        Contact
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="models-content-view">
+
+            <div class="models-view">
+                <div class="models-header">
+                    <div class="header-title">
+                        X3D Models
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <div class="frame-top">
+                        <div class="top-title" id="top-title">Pepsimax X3D Model</div>
+                        <div class="p-list">
+                        {volist name="models" id="vo"     key ='s'}
+
+                             <div class="p-item" onclick="showModel({$s})">{$vo.name}</div>
+
+                        {/volist}
+                          
+                        </div>
+                    </div>
+                    <iframe id="modelFrame" src="{$models[0]['url']}" frameborder="0" style="width: 100%;height: 600px;"></iframe>
+                </div>
+
+               
+    
+             </div>
+
+             <div class="models-img-view">
+                <div class="models-header">
+                    <div class="header-title">
+                       Gallery
+                    </div>
+                </div>
+                <div class="img-title">
+                    3D Images
+                </div>
+                <div class="img-list">
+                    <div class="img-item">
+
+                        <image src="/assets/img/p1.png" mode="aspectFill" alt="" onclick="showImg()"></image>
+                    </div>
+                    <div class="img-item">
+
+                        <image src="/assets/img/p1.png" mode="aspectFill" alt="" onclick="showImg()"></image>
+                    </div>
+                    <div class="img-item">
+
+                        <image src="/assets/img/p1.png" mode="aspectFill" alt="" onclick="showImg()"></image>
+                    </div>
+                    <div class="img-item">
+
+                        <image src="/assets/img/p1.png" mode="aspectFill" alt="" onclick="showImg()"></image>
+                    </div>
+                    
+
+                </div>
+
+
+
+
+                </div>
+
+             </div>
+        </div>
+
+        <div class="card-view">
+            <div class="card-list">
+                <div class="card-item">
+                    <div class="card-header">
+                        <div class="card-title">Cammers</div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title">
+                            Camera Views
+                        </div>
+
+                        <div class="info-btn-list">
+                            <div class="btn-item btn-s"  id="AutoRotate" >default</div>
+                            <div class="btn-item btn-p"  id="Camera_Front" >font</div>
+                            <div class="btn-item btn-i"  id="Camera_Left" >left</div>
+                            <div class="btn-item btn-i"  id="Camera_Top" >top</div>
+                            
+                        </div>
+
+                        <div class="info-remark">
+                            These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-header">
+                        <div class="card-title">Cammers</div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title">
+                            Camera Views
+                        </div>
+
+                        <div class="info-btn-list">
+                            <div class="btn-item btn-s">default</div>
+                            <div class="btn-item btn-p">font</div>
+                            <div class="btn-item btn-i">left</div>
+                            <div class="btn-item btn-i">top</div>
+                            
+                        </div>
+
+                        <div class="info-remark">
+                            These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-header">
+                        <div class="card-title">Cammers</div>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title">
+                            Camera Views
+                        </div>
+
+                        <div class="info-btn-list">
+                            <div class="btn-item btn-s">default</div>
+                            <div class="btn-item btn-p">font</div>
+                            <div class="btn-item btn-i">left</div>
+                            <div class="btn-item btn-i">top</div>
+                            
+                        </div>
+
+                        <div class="info-remark">
+                            These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer">
+            <div class="container">
+                <p>Copyright @ Assignment</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+ 
+    function openContact(){
+        layer.open({
+        title: 'Assignment Contact'
+        ,content: ' Email：cf344@sussex.ac.uk',
+         btn: ['Close' ]
+        ,yes: function(index, layero){
+            
+            layer.closeAll();
+        }
+        
+ 
+        });  
+    }
+
+    function showModel(index){
+        console.log(index)
+        let list = '<?php echo json_encode($models) ?>';
+        list = JSON.parse(list)
+
+        console.log(list)
+        // 获取iframe元素
+        var iframe = document.getElementById('modelFrame');
+        // 设置新的地址
+        iframe.src = list[index-1].url
+
+        document.getElementById('top-title').textContent = list[index-1].remark;
+    }
+
+    function showImg(){
+        layer.photos({
+        photos: {
+          "title": "Photos Demo",
+          "start": 0,
+          "data": [
+            {
+              "alt": "layer",
+              "pid": 1,
+              "src": "/assets/img/p1.png",
+            },
+            
+          ]
+        }
+      });
+    }
+
+</script>

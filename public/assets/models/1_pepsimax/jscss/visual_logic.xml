@@ -1,0 +1,591 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1244.5" scrolly="404.99999999999994" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="[ybta14}qBw?i1ks(Vbk" x="-1150" y="-450">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="hTeL%|L%^U!)Hy;VeyCI" x="-1150" y="-270">
+      <statement name="DO_PROGRESS">
+        <block type="setHTMLElemAttribute" id="O@8yG|Aq0D5+[wbx4H,r">
+          <field name="ATTRIBUTE">innerHTML</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text_join" id="RJ.5h9^pa2,Jn#:kFBbs">
+              <mutation items="2"></mutation>
+              <value name="ADD0">
+                <block type="percentage" id="v^q2;b%`g,*d[*Kd`i:("></block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="*ZMP|A[jV)_ttN4^IJHi">
+                  <field name="TEXT">%</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="h$=?FT)NgXyn*}02bVWP">
+              <field name="TEXT"></field>
+            </shadow>
+            <block type="text" id="s-{@VKI@).Db~q+={3rd">
+              <field name="TEXT">percentage</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="X?eZ$ByK]L9:e3Y^6``x">
+              <field name="PROPERTY">width</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text_join" id="d%)JEi2SDh]kJy%gO/?!">
+                  <mutation items="2"></mutation>
+                  <value name="ADD0">
+                    <block type="percentage" id="YqZbq[M3!0n#,@4QX@Wk"></block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="mLDu7ZcI-IVP6YEx/_d(">
+                      <field name="TEXT">%</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="1H3YqjPWx]Gs-3Rov_4k">
+                  <field name="TEXT">preloader-line</field>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_END">
+        <block type="setHTMLElemStyle" id=".!.W3%|ZS[yHShM]jA_5" disabled="true">
+          <field name="PROPERTY">backgroundColor</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="bT9?fnlY(o~(C+pqx.y{">
+              <field name="TEXT">rgb(200,200,200)</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="_xA+cwhU1!GPwFdce5%J">
+              <field name="TEXT">container</field>
+            </block>
+          </value>
+          <next>
+            <block type="setHTMLElemStyle" id="J)dAKS+6.-fh[R{D#JTx">
+              <field name="PROPERTY">animation</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="9w3~MdU12;a$JX1DTEjW">
+                  <field name="TEXT">hide 0.3s 0s linear 1</field>
+                </block>
+              </value>
+              <value name="ID">
+                <block type="text" id="WOj78$8I9-Xkg]p~-Ss%">
+                  <field name="TEXT">preloader-background</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="/U~?L%?PFHT*I8xPxV`+">
+                  <field name="PROPERTY">animationFillMode</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="9X-%v,v3~CEEU]xN{lYI">
+                      <field name="TEXT">forwards</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <block type="text" id=")rJ^6}AL+2;}GtI3-r3N">
+                      <field name="TEXT">preloader-background</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setTimeout" id="ShjLsTH!K[N*^Ref01w{">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="y;g+^Ojc1).N]Ggbld%y">
+                          <field name="NUM">0.6</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="setHTMLElemStyle" id="cWnZS`WBIOd.I_uXAn8%">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="ZVbHd3W=jemZ!jw/:wAD">
+                              <field name="TEXT">none</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <block type="text" id="Z9TbOJ~R;m])ey-`1Rr]">
+                              <field name="TEXT">preloader-background</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="removeHTMLElement" id="Q`a^/R%@]bWN^IpC85dk">
+                              <field name="PARENT">FALSE</field>
+                              <value name="ID">
+                                <shadow type="text" id="u}Z9$bv=?pmtCh}:By^r">
+                                  <field name="TEXT"></field>
+                                </shadow>
+                                <block type="text" id="f(|4bz,mn[,[M!T{V]O=">
+                                  <field name="TEXT">preloader-background</field>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="main" type="CommonTab" active="false" scrollx="1287.653507552768" scrolly="395.4941602174125" scale="0.7462153966366273">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="Z~pz|IWM]?(*k1gR}TLH">inertia</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="connectorSlot" id="2(rTV[VF5TCkOk*glC3V" x="-1130" y="-530">
+      <statement name="DO">
+        <block type="comment" id="ttZw-|@[wu5LYwx}l+bv">
+          <field name="TEXT">适配苹果与移动设备的渲染精度</field>
+          <next>
+            <block type="controls_if" id="b{{o*oI}mZEWt3Dq`p(I">
+              <value name="IF0">
+                <block type="logic_operation" id="d1[H`HACI0iU.eGsK(l~" inline="false">
+                  <field name="OP">OR</field>
+                  <value name="A">
+                    <block type="featureAvailable" id="t0bRlJ#(L^@Ntr+.%nQ4">
+                      <field name="FEATURE">RETINA</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_operation" id="q}uW,dj!DF1w3OoRiE.2" inline="false">
+                      <field name="OP">OR</field>
+                      <value name="A">
+                        <block type="featureAvailable" id="R+if*TccVK3uf|p*vc6]">
+                          <field name="FEATURE">MOBILE</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="featureAvailable" id="IPj$O_hTGTcjBP,lWWoB">
+                          <field name="FEATURE">MACOS</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="setScreenScale" id="HjR^|0g?X1VqTT@_[k:1">
+                  <value name="FACTOR">
+                    <shadow type="math_number" id="^2Y8iI6j=dZ!IRu~8NX5">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="math_number" id="muh2H(RV143L$AxGh;J8">
+                      <field name="NUM">2</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="comment" id="ozL6$079]{xscBL(Njmg">
+                  <field name="TEXT">默认相机阻尼，需要安装插件</field>
+                  <next>
+                    <block type="variables_set" id=",N}*,4N.i#|D5J7C%[Y{">
+                      <field name="VAR" id="Z~pz|IWM]?(*k1gR}TLH">inertia</field>
+                      <value name="VALUE">
+                        <block type="math_number" id=",yInWD4k(6U]l74ZXQ?;">
+                          <field name="NUM">0.2</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="Zjbcool-controls/orbitControls" id="m79S1,nrpbU2=+hE!=G!">
+                          <field name="OPTION">zoomInertia</field>
+                          <value name="VALUE">
+                            <shadow type="math_number" id="j#|R7[Yv,qxh|]-c?_j2">
+                              <field name="NUM">0.05</field>
+                            </shadow>
+                            <block type="variables_get" id="bvoImB+#~PUaN{mO^!;8">
+                              <field name="VAR" id="Z~pz|IWM]?(*k1gR}TLH">inertia</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="Zjbcool-controls/orbitControls" id="bf*wEtceiZiu7hS3bU*R">
+                              <field name="OPTION">rotateInertia</field>
+                              <value name="VALUE">
+                                <shadow type="math_number" id="Y:7yh76@e;{_s`YxMs`h">
+                                  <field name="NUM">0.05</field>
+                                </shadow>
+                                <block type="variables_get" id="$!b~p-.7xv5kcq|]_kP}">
+                                  <field name="VAR" id="Z~pz|IWM]?(*k1gR}TLH">inertia</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="Zjbcool-controls/orbitControls" id="5oON~rK^U*S(_wdS6BP.">
+                                  <field name="OPTION">rotateInertia</field>
+                                  <value name="VALUE">
+                                    <shadow type="math_number" id="BO`8YJl(/+Y[l6WCnaUm">
+                                      <field name="NUM">0.05</field>
+                                    </shadow>
+                                    <block type="variables_get" id="@~Fh4CXQNP?2Fu/mDO7J">
+                                      <field name="VAR" id="Z~pz|IWM]?(*k1gR}TLH">inertia</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="Zjbcool-controls/orbitControls" id="it{#pS!,^U~D$)1Fa5-2">
+                                      <field name="OPTION">zoomInertiaTouch</field>
+                                      <value name="VALUE">
+                                        <shadow type="math_number" id="F:GxwISQugc#oQ?e?kql">
+                                          <field name="NUM">0.05</field>
+                                        </shadow>
+                                        <block type="variables_get" id="tQRoDxs5eu#0Qn}#zSLU">
+                                          <field name="VAR" id="Z~pz|IWM]?(*k1gR}TLH">inertia</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="Zjbcool-controls/orbitControls" id="z^S6#{{rr/3(tCeKEddp">
+                                          <field name="OPTION">rotateInertiaTouch</field>
+                                          <value name="VALUE">
+                                            <shadow type="math_number" id="^r.=(8n@%8IX~RgMbe~0">
+                                              <field name="NUM">0.05</field>
+                                            </shadow>
+                                            <block type="variables_get" id="Ty]jlb8+4}`}b]4rS|jB">
+                                              <field name="VAR" id="Z~pz|IWM]?(*k1gR}TLH">inertia</field>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="comment" id="rJ{uvObf#xw?5hSFtj2C">
+          <field name="TEXT">默认相机开场动画</field>
+          <next>
+            <block type="tweenCameraExt" id="!Nh/#+N%c+C`cF@/Rpn~">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <field name="MOVEMENT_TYPE">SPHERICAL</field>
+              <value name="POSITION">
+                <block type="text" id="-}:7l5*LoD{F,gQo}MtO">
+                  <field name="TEXT">Camera_Start</field>
+                </block>
+              </value>
+              <value name="LOOKAT">
+                <block type="text" id="gFmhrn$4)MDC5|N`uJYR">
+                  <field name="TEXT">Camera_Target</field>
+                </block>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="GF2%T,$C=O.q{TnN_W.(">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="connectorSlot" id="C1Fga}*.rvrPws%m~@.[" x="-1130" y="70">
+      <statement name="DO">
+        <block type="comment" id="CKjr.rlydc@=eQL4j?lh">
+          <field name="TEXT">Q键截图</field>
+          <next>
+            <block type="eventHTMLElem" id="n5;g}WS@BbX=[(Y`|1Q4">
+              <field name="EVENT">keyup</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <block type="DOMObjectSelector" id="jSlaH85)Q`O`6,]KpC+7">
+                  <field name="DOM_OBJECT">DOCUMENT</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="controls_if" id="_h@m8lT~38[^l1-/qopn">
+                  <value name="IF0">
+                    <block type="logic_operation" id="vfgj2D5UU;(mVB*Hx)z?" inline="false">
+                      <field name="OP">OR</field>
+                      <value name="A">
+                        <block type="logic_compare" id="^(r.irXMn#YZs^6{r7G6">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="getEventProperty" id="+E!%*^]+|u:O(`fbs!75">
+                              <field name="PROPERTY">key</field>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="text" id=")nCsJHXduQjXXAbUZuR+">
+                              <field name="TEXT">q</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_compare" id="DO(._R~ma@dvRxuj]V9a">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="getEventProperty" id="z!RK$E|7d$xgnQZ;r9#x">
+                              <field name="PROPERTY">key</field>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="text" id="[QE),#^v,$9gGYkNf%pB">
+                              <field name="TEXT">Q</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="downloadFile" id="VC)$3YqF3+Q/#zBLAWu^">
+                      <value name="CONTENTS">
+                        <shadow type="text" id="Fl}?1Lp^(cU+[_#I%i,7">
+                          <field name="TEXT">data:,</field>
+                        </shadow>
+                        <block type="takeScreenshot" id="$GQZmyDo|XX84z?`2;CF">
+                          <field name="TYPE">png</field>
+                        </block>
+                      </value>
+                      <value name="FILENAME">
+                        <shadow type="text" id="9|M}0auvlU36WMPZD0e+">
+                          <field name="TEXT">screenshot.png</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="logic" type="CommonTab" active="true" scrollx="640.4855952002479" scrolly="79.99999999999977" scale="0.8775782159765173">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="/s[MZ@RbC9qC:4LO#i5M">StateRotate</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="|HAU:PL^dv0cFT/HL)O=" x="-530" y="-10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="9;Fwx4($r#cOCkj/*Qxy">
+          <field name="TEXT">myElem</field>
+        </shadow>
+        <block type="DOMObjectSelector" id="`jL!UB{cdCdfZC1t.6Hi">
+          <field name="DOM_OBJECT">CONTAINER</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="console.log" id="msIwGunMoS/mev]uD=]`">
+          <value name="VALUE">
+            <shadow type="text" id="+J$~/T`d=yd:Q9OlQYMy">
+              <field name="TEXT">Hello, Verge!</field>
+            </shadow>
+            <block type="getEventProperty" id="8Pd+MvVMlO*M#]9teVV[">
+              <field name="PROPERTY">target.id</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="B-aI(Id4~oS29rp9+Hri" x="-530" y="130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="9;Fwx4($r#cOCkj/*Qxy">
+          <field name="TEXT">myElem</field>
+        </shadow>
+        <block type="text" id="4C!u/26$=yQSv9SM5/$y">
+          <field name="TEXT">Camera_Front</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="tweenCameraExt" id="!Nh/#+N%c+C`cF@/Rpn~">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <field name="MOVEMENT_TYPE">SPHERICAL</field>
+          <value name="POSITION">
+            <block type="text" id="-}:7l5*LoD{F,gQo}MtO">
+              <field name="TEXT">Camera_Front</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="text" id="gFmhrn$4)MDC5|N`uJYR">
+              <field name="TEXT">Camera_Target</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="GF2%T,$C=O.q{TnN_W.(">
+              <field name="NUM">0.6</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="JJ_4iK#DC-Qm06#hCDev">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="9;Fwx4($r#cOCkj/*Qxy">
+              <field name="TEXT">myElem</field>
+            </shadow>
+            <block type="text" id="=rhu#q3w7J~f@k?o4nRj">
+              <field name="TEXT">Camera_Left</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="tweenCameraExt" id="VaR5nyP4xfv,rRx{Bas`">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <field name="MOVEMENT_TYPE">SPHERICAL</field>
+              <value name="POSITION">
+                <block type="text" id="Z(4,K1nx%%8g.EK}I}Fr">
+                  <field name="TEXT">Camera_Left</field>
+                </block>
+              </value>
+              <value name="LOOKAT">
+                <block type="text" id="W{73Cbk]/B47y(F?i%Up">
+                  <field name="TEXT">Camera_Target</field>
+                </block>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="v_?Jq*m5Wv5/V:c$pOmW">
+                  <field name="NUM">0.6</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="b]v400Ou^ld)Yi{D2=8f">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text" id="9;Fwx4($r#cOCkj/*Qxy">
+                  <field name="TEXT">myElem</field>
+                </shadow>
+                <block type="text" id="_[*Wev$M3i,8(6/V;]-J">
+                  <field name="TEXT">Camera_Top</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="l7f]6#;Y)xeLmzRDa`Pm">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="text" id="dzs#=#xvD4UrL3zkqt}c">
+                      <field name="TEXT">Camera_Top</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="text" id="YD[s0_/Yv5Gh|`Zj/On2">
+                      <field name="TEXT">Camera_Target</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="M7/P/q_k9ria86ne{_ZH">
+                      <field name="NUM">0.6</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="BR3r,iZRn{:?hlPf@krL" x="-530" y="510">
+      <field name="VAR" id="/s[MZ@RbC9qC:4LO#i5M">StateRotate</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="!.TK}a:LQ^.Tk?Mwp$q+">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+      <next>
+        <block type="eventHTMLElem" id=";Ir4g*0`aOy]4:6621Y2">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="9;Fwx4($r#cOCkj/*Qxy">
+              <field name="TEXT">myElem</field>
+            </shadow>
+            <block type="text" id="=j|ZZvw?|-zgi;y}xJev">
+              <field name="TEXT">AutoRotate</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="controls_ifelse" id="bJO`PLvzyQvGz0n)-rH:">
+              <value name="IF0">
+                <block type="logic_negate" id="|qxt;yx)b?HmAmw{noio">
+                  <value name="BOOL">
+                    <block type="variables_get" id="dtu{b3wQ(7MdX*B7y=L:">
+                      <field name="VAR" id="/s[MZ@RbC9qC:4LO#i5M">StateRotate</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="autoRotateCamera" id="RL=[L(}}=_u}zMv*`ih~">
+                  <field name="ON_OFF">ON</field>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="sv~~2o5T*v1%xOnHMj:6">
+                      <field name="NUM">-0.5</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="AqGb,D!m0Z3vH7-J!Sl1">
+                      <field name="VAR" id="/s[MZ@RbC9qC:4LO#i5M">StateRotate</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="I?]J^77QwfBn5vz]31`$">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <statement name="ELSE">
+                <block type="autoRotateCamera" id="!VlK%gC+q.EcgMKEY%Yl">
+                  <field name="ON_OFF">OFF</field>
+                  <value name="SPEED">
+                    <shadow type="math_number" id="8!ka`fdSy~~,b7P$BO3W">
+                      <field name="NUM">-0.5</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="rTy2NyUXhw,irZ`kp/7d">
+                      <field name="VAR" id="/s[MZ@RbC9qC:4LO#i5M">StateRotate</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="R;YH1$PsXP^v,;DPA*1S">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1518" viewport-y="28" viewport-w="1024" viewport-h="480.5" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
